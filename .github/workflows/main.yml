@@ -33,5 +33,5 @@ jobs:
         with:
           host: 3.210.168.142
           username: "ubuntu"
-          key: ${{ secrets.PRIVATE_KEY }}
+          ssh-key: ${{ secrets.PRIVATE_KEY }}
           script: sudo apt-get update -y
