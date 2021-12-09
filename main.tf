@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "ubuntu" {
   ami           = "ami-083654bd07b5da81d"
   instance_type = "t2.micro"
-#   key_name = "LAMP"
+  key_name = "LAMP"
 }
 
 resource "aws_eip" "elastic_ip" {
