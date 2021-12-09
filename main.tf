@@ -13,8 +13,7 @@ resource "aws_eip" "elastic_ip" {
 }
 
 
-resource "aws_security_group" "allow_ssh"
-{
+resource "aws_security_group" "allow_ssh" {
 name = "allow_ssh"
 
 ingress {
@@ -23,13 +22,7 @@ from_port = 22
 to_port = 22
 protocol = "tcp"
 cidr_blocks = ["0.0.0.0/0"]
-}
-}
-
-
-
-
-
+}}
 
 output "EIP" {
   value = aws_eip.elastic_ip.public_ip
