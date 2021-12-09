@@ -33,4 +33,4 @@ jobs:
           host: $ip
           username: "ubuntu"
           key: ${{ secrets.PRIVATE_KEY }}
-          script: whoami
+          script: sudo apt-get update -y
