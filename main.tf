@@ -13,7 +13,7 @@ resource "aws_eip" "elastic_ip" {
 }
 
 
-resource "aws_security_group" "ssh" {
+resource "aws_security_group" "ssh1" {
 name = "allow_ssh"
 
 ingress {
