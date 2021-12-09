@@ -13,8 +13,8 @@ resource "aws_eip" "elastic_ip" {
 }
 
 
-resource "aws_security_group" "ssh1" {
-name = "allow_ssh_conn"
+resource "aws_security_group" "ss1" {
+name = "allow_ssh_cnn"
 
 ingress {
 description = "ssh from VPC"
