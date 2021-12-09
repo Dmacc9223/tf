@@ -14,7 +14,7 @@ resource "aws_eip" "elastic_ip" {
 
 
 resource "aws_security_group" "ssh1" {
-name = "allow_ssh"
+name = "allow_ssh_conn"
 
 ingress {
 description = "ssh from VPC"
